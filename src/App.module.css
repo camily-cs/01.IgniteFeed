@@ -1,0 +1,23 @@
+.wrapper{
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* responsividade */
+/* rem - é uma unidade relativa ao tamanho da fonte da pag, ou seja,
+se a fonte diminuir, todo o restante diminuirá e se adaptará ao tamanho da fonte */
+@media (max-width: 768px) {
+
+    html{
+        font-size: 87.5%; /* equivalente a 14px */
+    }
+
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
