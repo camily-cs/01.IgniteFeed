@@ -94,7 +94,7 @@ export function Post({ author, publishedAt, content } : PostProps) {
                 <header>
                     <div className={styles.author}>                       
                         {/* pegando img do avatar do array de posts */}
-                        <Avatar src={author.avatarUrl}/> 
+                        <Avatar src={author.avatarUrl} alt=''/> 
 
                         <div className={styles.authorInfo}>
                             <strong>{author.name}</strong>
